@@ -1,0 +1,361 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易考拉海淘</title>
+
+    <link href="{% static 'index/css/topNavStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/topMyStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/topContStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/contStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/loutiStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/productListStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/footerStyle.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'index/css/jquery.arSlide.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'index/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'index/css/swiper.min.css' %}">
+
+    <script src="{% static 'index/js/jquery-1.12.0.js' %}"></script>
+    <script src="{% static 'index/js/jquery.arSlide.js' %}"></script>
+    <script src="{% static 'index/js/swiper.min.js' %}"></script>
+    <script src="{% static 'index/js/index.js' %}"></script>
+    {#<script src="{% static 'index/js/wheel.js' %}"></script>#}
+
+    {#打印输出更换图片路径#}
+    {#<script src="{% static 'index/js/what.js' %}"></script>#}
+
+</head>
+
+<body>
+
+    <div class="top">
+    <div class="topMy">
+        <div class="topMy_cont">
+            <span>考拉欢迎你！</span>
+            <a href="/kaola/login/" id="login"> 登录 </a>
+            <a href="/kaola/register/" id="reg"> 免费注册 </a>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            <span class="phoneShop">手机考拉海购</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <ul class="top_right">
+                <li><a href="#" id="dailySign">每日签到</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li class="personCenter"><a href="#">个人中心<span class="subLogo"></span></a></li>
+                <li class="topService"><a href="#">客户服务<span class="subLogo"></span></a></li>
+                <li><a href="#" id="gamePay">游戏充值</a></li>
+                <li><a href="#">消费者告知书</a></li>
+                <li class="topMore"><a href="#" id="top_rightMore">更多<span class="subLogo"></span></a></li>
+            </ul>
+
+            <ul class="personSub">
+                <li>我的优惠劵</li>
+                <li>我的考拉豆</li>
+                <li>账户安全</li>
+                <li>我的实名认证</li>
+                <li>我收藏的商品</li>
+                <li>我关注的品牌</li>
+                <li>售后管理</li>
+            </ul>
+            <ul class="serviceSub">
+                <li>联系客服</li>
+                <li>帮助中心</li>
+            </ul>
+            <ul class="moreSub">
+                <li>收藏本站</li>
+                <li>新浪微博</li>
+                <li>微信公众号</li>
+                <li>易信公众号</li>
+                <li>招商合作</li>
+                <li>考拉招聘</li>
+            </ul>
+        </div>
+    </div>
+    <div class="top_cont">
+        <h1><img src="{% static 'imgS/nav_imgs/logoALL.png'%}"></h1>
+        <input type="text" placeholder="宝宝秋装" class="searchInput">
+        <h2 class="searchLogo"><img src="{% static 'imgS/nav_imgs/search.png'%}"></h2>
+        <div class="topCar"><a href="#">购物车</a></div>
+        <div class="searchList">
+            <ul>
+                <li>卫生巾</li>
+                <li>护手霜</li>
+                <li>男包</li>
+                <li>周生生</li>
+                <li>bikkle</li>
+                <li>奥尔滨</li>
+                <li>咖啡</li>
+                <li>贝亲</li>
+                <li>兰芝</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topNav">
+        <dl class="top_navAll">
+            <dt class="firstClass"><a href="#" class="firstClassA"><img src="{% static 'imgS/nav_imgs/class/allClass.png'%}"><span>所有分类</span></a>
+            </dt>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkplg1m99_40_40.png'%}"><span>母婴儿童&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkpnez751_40_40.png'%}"><span>美容彩妆&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkpo5f994_40_40.png'%}"><span>服饰鞋包&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkpow3285_40_40.png'%}"><span>家居生活&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkpq2ue80_40_40.png'%}"><span>营养保健&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkpr75617_40_40.png'%}"><span>海外直邮&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkpsh0e98_40_40.png'%}"><span>数码家电&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqkptd2291_40_40.png'%}"><span>环球美食&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#"><img src="{% static 'imgS/nav_imgs/class/iqsu18g169_40_40.png'%}"><span>运动户外&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+            <dd><a href="#" class="lastClass"><img src="{% static 'imgS/nav_imgs/class/ir26dxt121_40_40.png'%}"><span>水果生鲜&nbsp;&nbsp;&gt;</span></a>
+            </dd>
+        </dl>
+        <ul class="topNav_right">
+            <li class="firstPage"><a href="#">首页</a></li>
+            <li><a href="#">今日限时购</a></li>
+            <li><a href="#">每日上新</a></li>
+            <li><a href="#">排行榜</a></li>
+            <li><a href="#">国家馆</a></li>
+        </ul>
+        <div class="show">
+            <div class="baby1">
+                <img src="{% static 'imgS/nav_imgs/navShow1.png'%}">
+            </div>
+            <div class="baby2">
+                <img src="{% static 'imgS/nav_imgs/navShow2.png'%}">
+            </div>
+            <div class="baby1">
+                <img src="{% static 'imgS/nav_imgs/navShow1.png'%}">
+            </div>
+            <div class="baby2">
+                <img src="{% static 'imgS/nav_imgs/navShow2.png'%}">
+            </div>
+            <div class="baby1">
+                <img src="{% static 'imgS/nav_imgs/navShow1.png'%}">
+            </div>
+            <div class="baby2">
+                <img src="{% static 'imgS/nav_imgs/navShow2.png'%}">
+            </div>
+            <div class="baby1">
+                <img src="{% static 'imgS/nav_imgs/navShow1.png'%}">
+            </div>
+            <div class="baby2">
+                <img src="{% static 'imgS/nav_imgs/navShow2.png'%}">
+            </div>
+            <div class="baby1">
+                <img src="{% static 'imgS/nav_imgs/navShow1.png'%}">
+            </div>
+            <div class="baby2">
+                <img src="{% static 'imgS/nav_imgs/navShow2.png'%}">
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{#轮播图#}
+    <div class="focus">
+{#    <div class="big-wrap">#}
+      <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+{#      <div class="swiper-slide">Slide 1</div>#}
+      {% for wheel in wheels %}
+        <div class="swiper-slide">
+            <img src="{{ wheel.img_name }}" alt="">
+        </div>
+      {% endfor %}
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+
+{#商品展示#}
+    <div class="cont">
+    <h1 class="discount"><img src="{% static 'imgS/cont/discountPaper.png'%}"></h1>
+
+    {% for title in titles %}
+        <div class="contBaby">
+            <h2><span>{{ title.t_name }}</span><i>{{ title.t_content }}</i><b></b></h2>
+            <h3>
+                <img src="{{ title.t_img }}">
+            </h3>
+            <ul class="babyNav">
+                {% for category in categorys %}
+                    <li class="category">{{ category.category }}<span></span></li>
+                {% endfor %}
+            </ul>
+
+            <div class="diaperSub">
+                <div class="class">
+                    {% for good in goods1 %}
+                        <div class="div">
+                            <a href="#">
+                                <img src="{{ good.img }}" alt="">
+                            </a>
+                            <p>商品：{{ good.word }}</p>
+                            <p>规格：{{ good.capacity }}</p>
+                            <p>单价：{{ good.per_price }}</p>
+                            <p>套餐优惠价：{{ good.all_price }}元</p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                {% for item in goods %}
+                    <div class="class class1">
+                        {% for good in item %}
+                            <div class="div">
+                                <a href="#">
+                                    <img src="{{ good.img }}" alt="">
+                                </a>
+                                <p>商品：{{ good.word }}</p>
+                                <p>规格：{{ good.capacity }}</p>
+                                <p>单价：{{ good.per_price }}</p>
+                                <p>套餐优惠价：{{ good.all_price }}元</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+
+            <div class="moreGoods">
+                <h4>更多母婴品牌好货&gt;</h4>
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="lastDiscount">
+        <img src="{% static 'imgS/footer/footer_03.png'%}">
+    </div>
+</div>
+
+
+    <div id="loutiNav">
+    <ul>
+        <li class="loutiCar"><h1>购物车</h1>
+            <p class="carNum">0</p></li>
+        <li class="floor">母婴儿童</li>
+        <li>美容彩妆</li>
+        <li>服饰鞋包</li>
+        <li>家居生活</li>
+        <li>营养保健</li>
+        <li>海外直销</li>
+        <li>数码家电</li>
+        <li>环球美食</li>
+        <li>网易严选</li>
+        <li class="last">TOP</li>
+    </ul>
+</div>
+
+
+    <div class="footer">
+
+    <ul class="adv_logo">
+        <li>
+            <h2>
+                <img src="{% static 'imgS/footer/footer_07.png'%}">
+            </h2>
+            <h3>100%正品</h3>
+            <h4>全球精选&nbsp;正品保障</h4>
+        </li>
+        <li>
+            <h2>
+                <img src="{% static 'imgS/footer/footer_09.png'%}">
+            </h2>
+            <h3>100%正品</h3>
+            <h4>全球精选&nbsp;正品保障</h4>
+        </li>
+        <li>
+            <h2>
+                <img src="{% static 'imgS/footer/footer_11.png'%}">
+            </h2>
+            <h3>100%正品</h3>
+            <h4>全球精选&nbsp;正品保障</h4>
+        </li>
+        <li>
+            <h2>
+                <img src="{% static 'imgS/footer/footer_13.png'%}">
+            </h2>
+            <h3>100%正品</h3>
+            <h4>全球精选&nbsp;正品保障</h4>
+        </li>
+    </ul>
+
+    <div class="adv_cont">
+        <div class="adv_contLeft">
+            <h1>
+                <img src="{% static 'imgS/footer/footer_20.png'%}">
+            </h1>
+            <span>关注我们</span>
+            <h2>
+                <img src="{% static 'imgS/footer/footer_27.png'%}">
+            </h2>
+        </div>
+        <div class="adv_contMid">
+            <dl>
+                <dt><a href="#">考拉保障</a></dt>
+                <dd><a href="#" class="footer_title">正品保障</a></dd>
+                <dd><a href="#">廉正监督</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">新手指南</a></dt>
+                <dd><a href="#" class="footer_title">购物流程</a></dd>
+                <dd><a href="#">支付方式</a></dd>
+                <dd><a href="#">通关税费</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">售后服务</a></dt>
+                <dd><a href="#" class="footer_title">退货流程</a></dd>
+                <dd><a href="#">退货政策</a></dd>
+                <dd><a href="#">通关税费</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">物流配送</a></dt>
+                <dd><a href="#" class="footer_title">配送方式</a></dd>
+                <dd><a href="#">配送服务</a></dd>
+                <dd><a href="#">运费标准</a></dd>
+                <dd><a href="#">物流跟踪</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">关于我们</a></dt>
+                <dd><a href="#" class="footer_title">联系我们</a></dd>
+                <dd><a href="#">招商合作</a></dd>
+                <dd><a href="#">运费标准</a></dd>
+                <dd><a href="#">物流跟踪</a></dd>
+            </dl>
+        </div>
+        <div class="adv_contRight">
+            <h4>
+                <img src="{% static 'imgS/footer/footer_23.png'%}">
+            </h4>
+            <span>扫描下载手机版</span>
+        </div>
+    </div>
+
+    <div class="footer_last">
+        <p class="footer_word">About NetEase-公司简介-联系方法-友情链接-招聘信息-客户服务-隐私政策-网络营销-网站地图-网易考拉海购</p>
+        <h1 class="policeLogo">&nbsp;浙公网安备&nbsp;33010002000066号&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：浙B2-20090185-3
+            网络文化经营许可证：浙网文[2016]0155-055号 网易公司版权所有@1997-2016</h1>
+        <h2 class="lastLogo">
+            <img src="{% static 'imgS/footer/footer_36.png'%}">
+        </h2>
+    </div>
+
+    </div>
+
+</body>
+</html>

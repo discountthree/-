@@ -1,0 +1,25 @@
+ul{padding:0;margin:0;list-style: none;}
+a{text-decoration:none;}
+.focus{position:relative;width: 1260px;height: 400px;}
+.big-wrap{overflow:hidden;}
+.big-wrap ul{position:relative;}
+.big-wrap ul li{overflow:hidden;}
+.big-wrap ul li img{display:block;width: 1260px;height: 400px;z-index: 1}
+
+/*渐现效果*/
+.big-wrap ul.fade li{position:absolute;top:0;left:0;}
+
+/*水平移动*/
+.big-wrap ul.moveX{overflow:hidden;}
+.big-wrap ul.moveX li{float:left;}
+
+
+
+.prev,.next{position:absolute;top:50%;height:60px;width:30px;line-height:60px;text-align:center;background-color:#444;color:#fff;opacity: 0.7;}
+.prev{left:20%;}
+.next{right:20%}
+
+
+.small-wrap{position:absolute;width:156px;height:30px;background:#444;z-index: 100;bottom: 0;left:45%;border-radius: 10px;opacity: 0.7;}
+.small-wrap ul li{width:10px;height:10px;background:white;float:left;border-radius:50%;margin: 10px 6px;}
+
